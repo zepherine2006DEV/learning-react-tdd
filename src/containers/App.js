@@ -1,13 +1,16 @@
 import React from 'react';
-import '../App.css';
-import { Header } from '../components/Header'
+import { Component } from 'react';
+import { Store } from './Store'
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-    </div>
-  );
+// declare a container (stateful) React component
+
+export class App extends Component {
+  render() {
+    return(
+      <div className="App">
+        <Store />
+      </div>
+    );
+  }
 }
 
-export default App;
