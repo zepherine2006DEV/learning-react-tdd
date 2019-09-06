@@ -20,4 +20,14 @@ describe("Store", function() {
         expect(headers.length).toBe(1); 
     });
 
+    it('should have two buttons', () => {
+        const buttons = mountedStore.find('Button');
+        expect(buttons.length).toBe(2); 
+    });
+
+    it('should have one map', () => {
+        const maps = mountedStore.find('Map');
+        expect(maps.length).toBe(1); 
+    });
+
 });
