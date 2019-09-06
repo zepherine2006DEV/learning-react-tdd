@@ -1,7 +1,7 @@
-import React, {Component} from 'React';
+import React, {Component} from 'react';
 
 export class Button extends Component {
     render(){
-        return("");
+        return(<button>Product</button>);
     }
 }
