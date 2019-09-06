@@ -1,11 +1,21 @@
 ## Learning React TDD
 
 The goal of this project is to learn about test driving the development of a React app, so that I can apply a good development process to front end work I do.
-I've used create-react-app to bootstrap the application.
+I've used create-react-app to bootstrap the application, then modified it extensively, based on the tutorial from Pluralsight.
+You can see the evolution of the app through the git commits.
 
-I've used enzyme for shallow rendering of components, to enable components to be tested in isolation.
+## How to Install
+
+1) Clone the project.
+2) Run npm install to get all the dependencies.
+
+## How to Run
+
+1) npm start
 
 ## Technology Used
+
+I've used enzyme for shallow rendering of components, to enable components to be tested in isolation.
 
 React 16.9
 Enzyme 3.10.0
