@@ -3,6 +3,13 @@
 The goal of this project is to learn about test driving the development of a React app, so that I can apply a good development process to front end work I do.
 I've used create-react-app to bootstrap the application.
 
+I've used enzyme for shallow rendering of components, to enable components to be tested in isolation.
+
+## Technology Used
+
+React 16.9
+Enzyme 3.10.0
+
 ## Learning Resources Used
 
 Pluralsight - Test Driven Development Using React
