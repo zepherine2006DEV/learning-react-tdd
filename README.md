@@ -1,3 +1,14 @@
+## Learning React TDD
+
+The goal of this project is to learn about test driving the development of a React app, so that I can apply a good development process to front end work I do.
+I've used create-react-app to bootstrap the application.
+
+## Learning Resources Used
+
+Pluralsight - Test Driven Development Using React
+
+## Starting Point
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
