@@ -7,7 +7,7 @@ export class Header extends Component {
   render() {
     return (
       <div className="Header">
-        <p>this is the header</p>
+        <img src="images/logo.png" alt="James Store"/>
       </div>
     );
   }
