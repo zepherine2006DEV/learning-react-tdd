@@ -6,7 +6,7 @@ describe("Store", function() {
 
     let mountedStore;
     
-    //mount store once before all tests.
+    //mount Store once before all tests.
     beforeEach(()=>{
         mountedStore = shallow(<Store />);
     });
@@ -30,4 +30,13 @@ describe("Store", function() {
         expect(maps.length).toBe(1); 
     });
 
+});
+
+describe('chooseProductImage', () => {
+    it('updates state.currentProductImage using product name passed to it', () => {
+        let mountedStore = shallow(<Store />);
+        let mockEvent = {target:{textContent:'testProduct'}};
+        mountedStore.instance().chooseProductImage(mockEvent);
+        expect(mountedStore.instance().state.currentProductImage).toBe('images/testProduct.png');
+    });
 });

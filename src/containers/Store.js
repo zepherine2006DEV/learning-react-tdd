@@ -20,12 +20,20 @@ export class Store extends Component {
                 name: "Beans",
             }
         ];
+
+        this.chooseProductImage = this.chooseProductImage.bind(this);
+    }
+
+    chooseProductImage(e) {
+        const product = e.target.textContent;
+        const image = 'images/' + product + '.png';
+        this.setState({currentProductImage: image});
     }
 
     render() {
 
         let productButtons = this.products.map((product, id) => {
-            return(<Button key={id} product={product.name} />);
+            return(<Button handleClick={this.chooseProductImage} key={id} product={product.name} />);
         });
 
         return (

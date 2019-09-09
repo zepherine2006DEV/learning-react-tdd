@@ -61,3 +61,12 @@ describe('When no product is passed to it', () => {
         expect(buttonText.text()).toEqual('Default Product'); 
     });
 });
+
+describe('when callback is provided as a prop', () => {
+    it('should call the function when clicked', () => {
+        const mockCallBack = jest.fn();
+        const mountedButtonWithCallback = shallow(<Button handleClick={mockCallBack} />);
+        mountedButtonWithCallback.find('button').simulate('click');
+        expect(mockCallBack.mock.calls.length).toEqual(1);
+    });
+});
