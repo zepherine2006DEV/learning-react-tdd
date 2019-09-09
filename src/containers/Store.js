@@ -10,8 +10,8 @@ export class Store extends Component {
             <div>
                 <Header />
                 <div>
-                <Button />
-                <Button />
+                <Button product="Coffee Cup"/>
+                <Button product="Coffee Beans"/>
                 </div>
                 <Product />
             </div>
