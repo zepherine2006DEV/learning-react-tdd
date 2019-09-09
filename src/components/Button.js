@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
+import './Button.css'
 
 export class Button extends Component {
     render(){
-        return(<button>Product</button>);
+        return(<button className="product-button">Product</button>);
     }
 }

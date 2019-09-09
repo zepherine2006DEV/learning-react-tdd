@@ -9,8 +9,10 @@ export class Store extends Component {
         return (
             <div>
                 <Header />
+                <div>
                 <Button />
                 <Button />
+                </div>
                 <Product />
             </div>
         );

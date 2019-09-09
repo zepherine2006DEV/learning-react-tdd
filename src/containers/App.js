@@ -1,6 +1,7 @@
 import React from 'react';
 import { Component } from 'react';
 import { Store } from './Store'
+import '../App.css';
 
 // declare a container (stateful) React component
 
