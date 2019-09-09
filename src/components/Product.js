@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-export class Map extends Component {
+export class Product extends Component {
     render(){
         return("");
     }

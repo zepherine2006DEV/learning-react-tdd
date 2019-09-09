@@ -25,8 +25,8 @@ describe("Store", function() {
         expect(buttons.length).toBe(2); 
     });
 
-    it('should have one map', () => {
-        const maps = mountedStore.find('Map');
+    it('should have one product', () => {
+        const maps = mountedStore.find('Product');
         expect(maps.length).toBe(1); 
     });
 

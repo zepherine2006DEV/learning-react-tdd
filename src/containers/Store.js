@@ -2,7 +2,7 @@ import React from 'react';
 import { Component } from 'react';
 import { Header } from '../components/Header';
 import { Button } from '../components/Button';
-import { Map } from '../components/Map';
+import { Product } from '../components/Product';
 
 export class Store extends Component {
     render() {
@@ -11,7 +11,7 @@ export class Store extends Component {
                 <Header />
                 <Button />
                 <Button />
-                <Map />
+                <Product />
             </div>
         );
     }

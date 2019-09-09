@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Map } from '../Map';
+import { Product } from '../Product';
 
 it('renders without crashing', () => {
-    let mountedMap = shallow(<Map />);
+    let mountedProduct = shallow(<Product />);
 });
