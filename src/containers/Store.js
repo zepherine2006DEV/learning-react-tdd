@@ -5,15 +5,36 @@ import { Button } from '../components/Button';
 import { Product } from '../components/Product';
 
 export class Store extends Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            currentProductImage: 'images/defaultprod.png'
+        }
+
+        this.products = [
+            {
+                name: "Cup",
+            },{
+                name: "Beans",
+            }
+        ];
+    }
+
     render() {
+
+        let productButtons = this.products.map((product, id) => {
+            return(<Button key={id} product={product.name} />);
+        });
+
         return (
             <div>
                 <Header />
                 <div>
-                <Button product="Coffee Cup"/>
-                <Button product="Coffee Beans"/>
+                    {productButtons}
                 </div>
-                <Product />
+                <Product productimage={this.state.currentProductImage} />
             </div>
         );
     }

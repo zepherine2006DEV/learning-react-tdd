@@ -5,7 +5,7 @@ export class Product extends Component {
     render(){
         return(
             <div className="ProductBox">
-                <img src="images/defaultprod.png" />    
+                <img src={this.props.productimage} />    
             </div>
         );
     }
