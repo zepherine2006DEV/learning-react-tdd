@@ -23,3 +23,41 @@ describe('Button', () => {
     });
 
 });
+
+describe('When a product is passed to it', () => {
+
+    let mountedButton;
+    let props;
+
+    beforeEach(() => {
+        props = {
+            product:"Product 1"
+        };
+        mountedButton = shallow(<Button {...props} />);
+    });
+
+
+    it('should display the name of the product', () => {
+        const buttonText = mountedButton.find('.product-button');
+        expect(buttonText.text()).toEqual('Product 1'); 
+    });
+});
+
+describe('When no product is passed to it', () => {
+
+    let mountedButton;
+    let props;
+
+    beforeEach(() => {
+        props = {
+            product:undefined
+        };
+        mountedButton = shallow(<Button {...props} />);
+    });
+
+
+    it('should display the default product', () => {
+        const buttonText = mountedButton.find('.product-button');
+        expect(buttonText.text()).toEqual('Default Product'); 
+    });
+});
