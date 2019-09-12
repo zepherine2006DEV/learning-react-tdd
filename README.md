@@ -29,14 +29,14 @@ You will also see any lint errors in the console.
 ## How to Test
 
 ```console
-npm test
+$ npm test
 ```
 
 Launches the test runner in the interactive watch mode.<br>
 
 ## Technology Used
 
-React 16.9
+React 16.9  
 Enzyme 3.10.0
 
 I've used enzyme for shallow rendering of components, to enable components to be tested in isolation.
